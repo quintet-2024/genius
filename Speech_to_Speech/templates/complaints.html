@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Complaint Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: green;
+        }
+        tr:nth-child(even) {
+            background-color: pink;
+        }
+        tr:hover {
+            background-color:lightblue;
+        }
+        .reply-container {
+            display: flex;
+            align-items: center;
+        }
+        .reply-container input[type="text"] {
+            flex: 1;
+            padding: 5px;
+            margin-right: 5px;
+        }
+        .reply-container button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Admin Complaint Page</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>User</th>
+                <th>Complaint</th>
+                <th>Date</th>
+                <th>Reply</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>1</td>
+                <td>user123</td>
+                <td>Issue with login functionality</td>
+                <td>2024-12-14</td>
+                <td><form method="post" action="">
+                    <div class="reply-container">
+                        <input type="text" placeholder="Enter your reply">
+                        <button>Send</button>
+                    </div></form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
